@@ -6,6 +6,10 @@
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
+/**
+ * space : O(n)
+ * time : O(1)
+ */
 class Solution {
 public:
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
