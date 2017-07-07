@@ -31,19 +31,19 @@ public:
 		while(len1>0 && len2>0){
 			if(len1 == len2){
 				add = l1->val + l2->val;
-        l1 = l1->next;
-        l2 = l2->next;
+                l1 = l1->next;
+                l2 = l2->next;
 				len1 --;
 				len2 --;
 			}
 			else if(len1 > len2){
 				add = l1->val;
-        l1 = l1->next;
+                l1 = l1->next;
 				len1 --;
 			}
 			else{
 				add = l2->val;
-        l2 = l2->next;
+                l2 = l2->next;
 				len2 --;
 			}
 
