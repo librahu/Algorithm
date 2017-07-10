@@ -24,9 +24,9 @@ public:
 };
 
 class Solution {
-	bool isValidBST(TreeNode* root) {
-		if(root == NULL) return true;
-		
-	}
+    bool isValidBST(TreeNode* root) {
+        if(root == NULL) return true;
+        
+    }
 }
 
