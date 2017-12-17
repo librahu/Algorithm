@@ -1,15 +1,17 @@
 #ifndef BSTMAP_H
 #define BSTMAP_H
+#include <iostream>
+
 template<typename K, typename V>
 class Node{
 	public:
-		T key;
 		K key;
+		V val;
 		Node<K, V>* left;
 		Node<K, V>* right;
 		int n; //以该节点为根的子树的节点数目 
 		
-		Node(K _key, V _value, int _n) : key(_key), value(_value), n(_n){}
+		Node(K _key, V _val, int _n) : key(_key), val(_val), n(_n){}
 };
 
 template<typename K, typename V>
@@ -38,14 +40,14 @@ BstMap<K, V>::~BstMap(){
 
 
 template<typename K, typename V>
-int BstMap<K, V>::int size(Node<K, V>* x){
+int BstMap<K, V>::size(Node<K, V>* x){
 	if(x == NULL)
 		return 0;
 	return x.N;
 }
 
 template<typename K, typename V>
-int BstMap<K, V>::int size(){
+int BstMap<K, V>::size(){
 	return size(root);
 }
 
